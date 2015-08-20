@@ -1,0 +1,38 @@
+{
+  "name": "linter-gradle",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Show in-line code issues using the Gradle Build System",
+  "repository": "https://github.com/k2b6s9j/linter-gradle",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-linter": "^3.2.0",
+    "xregexp": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.2.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+    },
+    "ecmaFeatures": {
+      "modules": true
+    },
+    "globals": {
+      "atom": true
+    }
+  }
+}
